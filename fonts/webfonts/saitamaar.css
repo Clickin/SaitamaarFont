@@ -1,0 +1,19 @@
+/*
+ * Saitamaar Font
+ * A font designed specifically for ASCII art and Japanese SJIS-Art
+ * License: Public Domain
+ */
+
+@font-face {
+  font-family: 'Saitamaar';
+  src: url('Saitamaar-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Usage example:
+ * body {
+ *   font-family: 'Saitamaar', monospace;
+ * }
+ */

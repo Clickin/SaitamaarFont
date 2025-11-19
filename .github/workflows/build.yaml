@@ -56,7 +56,11 @@ jobs:
     - name: proof
       run: make proof
     - name: setup site
-      run: cp scripts/index.html out/index.html
+      run: |
+        cp scripts/index.html out/index.html
+        mkdir -p out/webfonts out/ttf
+        cp fonts/webfonts/*.css fonts/webfonts/*.woff2 out/webfonts/
+        cp fonts/ttf/*.ttf out/ttf/ 2>/dev/null || true
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}

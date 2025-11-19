@@ -3,16 +3,73 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>My Font development</title>
+		<title>Saitamaar Font - ASCII Art Font</title>
+		<link rel="stylesheet" href="webfonts/saitamaar.css" />
+		<style>
+			body {
+				font-family: sans-serif;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+				line-height: 1.6;
+			}
+			.demo {
+				font-family: 'Saitamaar', monospace;
+				background: #f5f5f5;
+				padding: 20px;
+				border-radius: 8px;
+				white-space: pre;
+				overflow-x: auto;
+			}
+			.usage {
+				background: #2d2d2d;
+				color: #f8f8f2;
+				padding: 15px;
+				border-radius: 8px;
+				overflow-x: auto;
+			}
+			.usage code {
+				color: #f8f8f2;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>My Font testing pages</h1>
+		<h1>Saitamaar Font</h1>
+		<p>A font designed specifically for ASCII art and Japanese SJIS-Art.</p>
+
+		<h2>Webfont Usage</h2>
+		<div class="usage">
+			<code>&lt;link rel="stylesheet" href="https://YOUR-USERNAME.github.io/SaitamaarFont/webfonts/saitamaar.css"&gt;</code>
+		</div>
+
+		<h2>CSS Usage</h2>
+		<div class="usage">
+			<code>body {<br>
+  font-family: 'Saitamaar', monospace;<br>
+}</code>
+		</div>
+
+		<h2>Font Demo</h2>
+		<div class="demo">Saitamaar Font Demo
+ASCII Art optimized font
+日本語のSJIS-Artにも最適化されています</div>
+
+		<h2>Development & Testing</h2>
 		<ul>
 			<li>
 				<a href="fontbakery/fontbakery-report.html">FontBakery Report</a>
 			</li>
 			<li>
 				<a href="proof/diffenator2-report.html">Diffenator2 Report</a>
+			</li>
+			<li>
+				<a href="webfonts/saitamaar.css">Download CSS</a>
+			</li>
+			<li>
+				<a href="webfonts/Saitamaar-Regular.woff2">Download WOFF2</a>
+			</li>
+			<li>
+				<a href="ttf/Saitamaar-Regular.ttf">Download TTF</a>
 			</li>
 		</ul>
 	</body>
