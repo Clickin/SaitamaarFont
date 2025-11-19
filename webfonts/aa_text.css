@@ -1,0 +1,48 @@
+.AA_Text {
+  background: white !important;
+  color: black !important;
+}
+
+/* Font definition */
+@font-face {
+  font-family: 'Stmr';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('https://clickin.github.io/SaitamaarFont/webfonts/Saitamaar-Regular.woff2') format("woff2"),
+    url('https://clickin.github.io/SaitamaarFont/ttf/Saitamaar-Regular.ttf') format("truetype");
+}
+
+.AA_Text {
+  font-family: Stmr, Saitamaar, "MS PGothic", "TextAA";
+  font-size: 16px;
+  line-height: 1.125;
+  white-space: nowrap;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* For screens up to 800px wide */
+
+@media all and (max-width: 800px) {
+  .AA_Text {
+    font-family: Stmr, Saitamaar, "MS PGothic", "TextAA";
+    font-size: 11px;
+    white-space: nowrap;
+    width: 800px;
+    background-color: #f8f8f9;
+  }
+}
+
+/* For screens up to 540px wide */
+
+@media all and (max-width: 540px) {
+  .AA_Text {
+    font-family: Stmr, Saitamaar, "MS PGothic", "TextAA";
+    font-size: 9px;
+    white-space: nowrap;
+    width: 680px;
+    background-color: #f8f8f9;
+  }
+}
